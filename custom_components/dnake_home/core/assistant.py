@@ -20,6 +20,11 @@ class __AssistantCore:
         self.auth = encode_auth(auth_name, auth_psw)
         _LOGGER.info(f"bind auth info: ip={self.gw_ip},auth={self.auth}")
 
+    def update_gateway_ip(self, new_ip):
+        if self.gw_ip != new_ip:
+            _LOGGER.info(f"Gateway IP updated: {self.gw_ip} -> {new_ip}")
+            self.gw_ip = new_ip
+
     def bind_iot_info(self, iot_device_name, gw_iot_name):
         self.from_device = iot_device_name
         self.to_device = gw_iot_name

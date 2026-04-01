@@ -4,6 +4,19 @@ TITLE = "Dnake Home"
 DOMAIN = "dnake_home"
 MANUFACTURER = "Dnake"
 
+CONF_GATEWAY_IP = "gateway_ip"
+CONF_AUTH_USERNAME = "auth_username"
+CONF_AUTH_PASSWORD = "auth_password"
+CONF_SCAN_INTERVAL = "scan_interval"
+CONF_GATEWAY_MACS = "gateway_macs"
+
+DEFAULT_GATEWAY_IP = "192.168.1.2"
+DEFAULT_AUTH_USERNAME = "admin"
+DEFAULT_AUTH_PASSWORD = "123456"
+DEFAULT_SCAN_INTERVAL = 10
+DEFAULT_GATEWAY_MACS = []
+DEFAULT_GATEWAY_CHECK_INTERVAL = 30
+
 
 class Action(Enum):
     # 获取单设备状态
